@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TOKO KUE SHALIA</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DancingScript:wght@400;600;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .judul-lettering {
+        font-family: 'DancingScript', cursive;
+      }
+    </style>
+  </head>
+  
+<body class="bg-blue-50 font-sans">
+
+  <header class="bg-pink-400 text-white p-6 shadow-lg">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center justify-center mb-4 md:mb-0">
+        <img src="img/logo shalia.png" alt="Logo Toko Kue Shalia" class="w-16 h-16 rounded-full mr-4 shadow-md border-2 border-white"/>
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold judul-lettering">TOKO KUE SHALIA</h1>
+          <p class="text-sm md:text-lg">Lokal yang Manis, Warna-warni, dan Membahagiakan!</p>
+        </div>
+      </div>
+  
+      <!-- Navigasi -->
+      <nav class="flex space-x-4 text-sm md:text-base mt-4 md:mt-0">
+        <a href="#produk" class="hover:underline">Produk</a>
+        <a href="#tentang" class="hover:underline">Tentang Kami</a>
+        <a href="#kontak" class="hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  
+
+  <!-- Produk -->
+<main class="container mx-auto px-4 py-10 space-y-20">
+  <section id="produk">
+    <h2 class="text-3xl font-bold text-pink-600 text-center mb-10">Produk Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Produk Card -->
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-yellow-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300"> 
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">Best Seller</span> 
+        <img src="img/kue talam.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Kue Talam">
+        <h3 class="text-xl font-semibold text-pink-700">Kue Talam</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Kue tradisional khas Betawi.</p>
+        <p class="text-pink-600 font-bold mt-2">Rp5.000/pcs</p>
+        <button data-nama="Kue Talam" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105"> 
+          Pesan via WhatsApp
+        </button>
+      </div>
+
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-yellow-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300"> 
+        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">Best Seller</span> 
+        <img src="img/lapis legit.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Lapis Legit">
+        <h3 class="text-xl font-semibold text-green-700">Lapis Legit</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Salah satu jenis kue basah tradisional dari Palembang.</p>
+        <p class="text-green-600 font-bold mt-2">Rp75.000/box</p>
+        <button data-nama="Lapis Legit" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105">
+          Pesan via WhatsApp
+        </button>
+      </div>
+
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-blue-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
+        <img src="img/Bika Ambon.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Bika Ambon">
+        <h3 class="text-xl font-semibold text-blue-700">Bika Ambon</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Kue khas Medan dari tepung tapioka, telur, gula, dan santan.</p>
+        <p class="text-blue-600 font-bold mt-2">Rp72.000/box</p>
+        <button data-nama="Bika Ambon" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105">
+          Pesan via WhatsApp
+        </button>
+      </div>
+
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-purple-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
+        <img src="img/bolu ketan hitam.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Bolu Ketan Hitam">
+        <h3 class="text-xl font-semibold text-purple-700">Bolu Ketan Hitam</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Kue khas Indonesia dengan cita rasa dan tekstur istimewa.</p>
+        <p class="text-purple-600 font-bold mt-2">Rp5.000/slice</p>
+        <p class="text-purple-600 font-bold mt-2">Rp60.000/box</p>
+        <button data-nama="Bolu Ketan Hitam" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105">
+          Pesan via WhatsApp
+        </button>
+      </div>
+
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-pink-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
+        <img src="img/bolu pisang.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Bolu Pisang">
+        <h3 class="text-xl font-semibold text-yellow-700">Bolu Pisang</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Kue bolu pisang khas Sukabumi yang lezat dan lembut.</p>
+        <p class="text-yellow-600 font-bold mt-2">Rp5.000/slice</p>
+        <p class="text-yellow-600 font-bold mt-2">Rp55.000/box</p>
+        <button data-nama="Bolu Pisang" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105">
+          Pesan via WhatsApp
+        </button>
+      </div>
+
+      <div class="relative bg-white p-4 rounded-xl shadow border-4 border-red-300 h-full flex flex-col transition transform hover:-translate-y-1 hover:shadow-xl duration-300">
+        <img src="img/bolu gulung.jpeg" class="w-full h-48 object-cover rounded mb-4" data-nama="Bolu Pisang">
+        <h3 class="text-xl font-semibold text-yellow-700">Bolu Gulung</h3>
+        <p class="text-gray-600 mt-1 flex-grow">Variasi dari bolu biasa yang dibuat lebih tipis dan digulung, serta lebih sering ditemui sebagai sajian modern atau camilan modern. .</p>
+        <p class="text-yellow-600 font-bold mt-2">Rp5.000/slice</p>
+        <p class="text-yellow-600 font-bold mt-2">Rp65.000/box</p>
+        <button data-nama="Bolu Pisang" class="mt-4 bg-green-500 text-white px-4 py-2 rounded font-bold hover:bg-green-600 transition-transform transform hover:scale-105">
+          Pesan via WhatsApp
+        </button>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+    <!-- Tentang Kami -->
+<section id="tentang" class="text-center fade-in">
+  <h2 class="text-3xl font-bold text-pink-600 mb-6">Tentang Kami</h2>
+  <p class="max-w-2xl mx-auto text-gray-700 leading-relaxed">
+    Toko Kue Shalia hadir untuk memanjakan lidah Anda dengan berbagai macam kue tradisional yang lezat dan bikin nagih! Kami percaya bahwa setiap gigitan itu punya cerita, dan kami ingin Anda merasakannya. Sejak pertama kali buka, kami berkomitmen untuk menyediakan kue-kue lokal yang selalu fresh dan penuh rasa, dari Kue Talam Betawi yang manis dan lembut, hingga Lapis Legit Palembang yang kaya rasa.
+    Kue kami bukan hanya soal rasa, tapi juga soal kenangan. Mulai dari Bika Ambon Medan yang kenyal, hingga Bolu Ketan Hitam yang unik dan bolu pisang yang lembut, semuanya kami buat dengan penuh cinta. Kami juga punya Bolu Gulung yang cocok banget buat camilan santai di rumah.
+    Jadi, kalau lagi pengen kue enak dan terpercaya, Toko Kue Shalia siap menemani hari-hari manis Anda!
+  </p>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="text-center mt-10 fade-in">
+  <h2 class="text-3xl font-bold text-pink-600 mb-6">Kontak Kami</h2>
+  <div class="flex justify-center gap-6 mb-6">
+    <a href="https://wa.me/6288295077631" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp" class="mx-auto">
+      <p class="text-green-600 font-semibold mt-1">WhatsApp</p>
+    </a>
+    <a href="https://www.instagram.com/llya.az?igsh=MTMzMG12M3B0dnVhMQ==" target="_blank">
+      <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" class="mx-auto">
+      <p class="text-pink-600 font-semibold mt-1">@tokokueshalia</p>
+    </a>
+  </div>
+  <div class="max-w-2xl mx-auto rounded overflow-hidden shadow-lg">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.906009827655!2d106.9665119!3d-6.406108799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6995d20156e367%3A0x5b7cd089c3c57813!2sSMK%20Bina%20Mandiri%20Multimedia%20Cileungsi!5e0!3m2!1sen!2sid!4v1746104002148!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-pink-300 to-red-200 text-center text-white p-4 mt-10">
+    &copy; 2025 Toko Kue Shalia. Semua hak cipta dilindungi.
+  </footer>
+
+  <!-- WhatsApp Script -->
+  <script>
+    document.addEventListener('click', function (e) {
+      if (e.target.matches('[data-nama]')) {
+        const produk = encodeURIComponent(e.target.getAttribute('data-nama'));
+        const url = `https://wa.me/6288295077631?text=Halo,%20saya%20ingin%20memesan%20${produk}`;
+        window.open(url, '_blank');
+      }
+    });
+  </script>
+
+</body>
+</html>
